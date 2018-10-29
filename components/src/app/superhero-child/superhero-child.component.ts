@@ -1,4 +1,5 @@
 import { Input, Output, EventEmitter, Component, OnInit } from '@angular/core';
+import { Superhero } from '.././superhero';
 
 @Component({
   selector: 'app-superhero-child',
@@ -8,6 +9,7 @@ import { Input, Output, EventEmitter, Component, OnInit } from '@angular/core';
 export class SuperheroChildComponent  {
 
   @Output() read = new EventEmitter<string>();
+  @Input() superhero: Superhero;
 
 
   tryToCallSuperhero = function(name) {
