@@ -1,0 +1,15 @@
+<p>
+  hero-list workssss!
+</p>
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+      {{hero.supername}} is actually {{hero.name}}<br>
+      <ul class="superpowers">
+      <li *ngFor="let superpower of hero.superpowers">
+        {{superpower}}
+      </li>
+    </ul>
+  </li>
+</ul>

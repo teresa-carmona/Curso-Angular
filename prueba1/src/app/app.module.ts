@@ -6,16 +6,25 @@ import { AppComponent } from './app.component';
 
 import { SaludoComponent } from './saludo.component';
 import { SumaComponent } from './suma/suma.component';
+import { DomComponent } from './dom/dom.component';
+import { HeroListComponent } from './hero-list/hero-list.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludoComponent,
-    SumaComponent
+    SumaComponent,
+    DomComponent,
+    HeroListComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
