@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SaludoComponent } from './saludo.component';
+import { SumaComponent } from './suma/suma.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SaludoComponent
+    SaludoComponent,
+    SumaComponent
   ],
   imports: [
     BrowserModule,
