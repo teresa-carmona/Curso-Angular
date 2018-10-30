@@ -7,3 +7,10 @@
 <button (click)=showPhrase(2)>Muestra una frase del día</button><br>
 {{phrase}}
 
+<p>
+    Input your license plate number: <input [(ngModel)] = numberPlate><br>
+    <button (click)=checkAccess(numberPlate)>Show me if I'm allowed to drive in the city center</button><br>
+
+</p>
+<p>{{allowedPromise}}</p>
+

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceConsumerComponent } from './service-consumer/service-consumer.component';
 import { DiceService } from './dice-service.service';
+import { LicencePlateAuthorizationService } from './licencePlateAuthorization.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,9 +15,10 @@ import { DiceService } from './dice-service.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [DiceService],
+  providers: [DiceService, LicencePlateAuthorizationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
