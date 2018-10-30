@@ -6,3 +6,15 @@
     <button (click)=tryToCallSuperhero(superhero.name)>Help!!!</button>
   </p>
   
+  <ul class="Superhero">
+      <li *ngFor="let superhero of superheroes">
+          Superhero: {{superhero.name}}<br>
+          Alias: {{superhero.alterEgo}}<br>
+          <ul class="superpowers">
+          <li *ngFor="let superpower of superhero.superpowers">
+            {{superpower}}
+          </li>
+          <button (click)=tryToCallSuperhero(superhero.name)>Help!!!</button>
+        </ul>
+      </li>
+    </ul>

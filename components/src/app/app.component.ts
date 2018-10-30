@@ -8,7 +8,7 @@ import { Superhero } from './superhero';
   <br><br>
   <app-say-hi [name]="famous.toUpperCase()"></app-say-hi>
   <app-say-hi2 name="Nelson Mandela" (read)=doSomething($event)></app-say-hi2>
-  <app-superhero-child [superhero]="batman" (read)=callSuperhero($event)></app-superhero-child>
+  <app-superhero-child [superheroList]="batman" (read)=callSuperhero($event)></app-superhero-child>
   `,
   styleUrls: ['./app.component.css']
 })
@@ -16,6 +16,9 @@ export class AppComponent {
   title = 'components';
   famous = "rafa nadal";
   batman:Superhero = {name:'batman', alterEgo:'bruce wayne', superpowers:['millionaire']};
+  superheroList:Superhero[] = [{name:'batman', alterEgo:'bruce wayne', superpowers:['millionaire']},
+  {name:'superman', alterEgo:'clark kent', superpowers:['flying', 'x-ray']},
+  {name:'wolverine', alterEgo:'logan', superpowers:['self healing', 'iron claws']}];
   times = 0;
   
 

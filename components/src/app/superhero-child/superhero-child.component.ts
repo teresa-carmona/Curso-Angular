@@ -9,7 +9,7 @@ import { Superhero } from '.././superhero';
 export class SuperheroChildComponent  {
 
   @Output() read = new EventEmitter<string>();
-  @Input() superhero: Superhero;
+  @Input() superheroList: Superhero[];
 
 
   tryToCallSuperhero = function(name) {
