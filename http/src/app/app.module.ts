@@ -3,23 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { TimePipe } from './app.pipe.time';
-import { CapitalizePipe } from './capitalize.pipe';
-
-import { CapitalizeService } from './capitalize.service';
+import { CountriesComponent } from './countries/countries.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TimePipe,
-    CapitalizePipe
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [CapitalizeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

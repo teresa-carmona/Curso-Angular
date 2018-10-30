@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prueba1';
-  today = Date.now();
-  raw = `I wish to wish the wish you wish to wish, but if you 
-  wish the wish the witch wishes, I won't wish the wish you wish to wish`;
-
 }
